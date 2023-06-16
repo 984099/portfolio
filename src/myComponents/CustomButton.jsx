@@ -1,24 +1,22 @@
 import './custom_button.css'
 import React from 'react'
 
-function CustomButton(props){
-    const onPressed=(event)=>{
-        console.log("on Pressed",event)
+function CustomButton(props) {
+    const onPressed = (event) => {
+        console.log('button clicked on pressed :', event)
     }
-    return(
-        <button onClick= {props.onClick}id={props.id}
-         className={`btn ${props.colorClass}`}>{props.title}
-         {
-            props.isDownload ? <span style={{marginLeft:'20px'}}></span>
+    return (
+        <button id={props.id} onClick={
+            props.onClick
+        }
+            className={`btn ${props.colorClass}`}>{props.title}
+            {
+                props.showIcon && <span class="material-symbols-outlined">
+                    download
+                </span>
+            }
+        </button>
+    )
 }
-         {
-            props.isdownload &&
-         
-         <span class="material-symbols-outlined">
-download
-</span>
-}
-</button>
-  
 
 export default CustomButton

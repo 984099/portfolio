@@ -1,0 +1,12 @@
+service_card{
+    width: 360px;
+    background-color: antiquewhite;
+    box-shadow: 10 px 20px rebeccapurple;
+    padding: 10px;
+    text-align: center;
+
+}
+.service_card img{
+    width: 350px;
+    height: 259px;
+}

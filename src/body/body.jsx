@@ -1,12 +1,13 @@
 import './body.css'
 import danceMan from '../assets/dance.png'
 import CustomButton from '../myComponents/CustomButton'
+import ServiceCard from '../myComponents/service_card'
 
 function Body(props){
     const nameList=
-    "Ram"
-    "Sita"
-    "HAri"
+    ["Ram",
+    "Sita",
+    "HAri"]
     return (
         <>
         {
